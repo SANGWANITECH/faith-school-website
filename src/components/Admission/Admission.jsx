@@ -117,7 +117,7 @@ export default function BecomeStudent() {
           <input
             type="text"
             name="previousGrade"
-            placeholder="Previous Grade Performance"
+            placeholder="Previous Grade Performance e.g. Good"
             value={formData.previousGrade}
             onChange={handleChange}
             className={inputClass}
