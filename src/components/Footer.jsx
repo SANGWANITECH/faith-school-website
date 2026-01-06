@@ -1,10 +1,10 @@
 // ContactFooter.jsx
 import { FaFacebookF, FaWhatsapp, FaArrowUp, FaEnvelope } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 export default function ContactFooter() {
   return (
     <footer className="w-full">
-
       {/* Contact Section with school bg */}
       <section className="relative w-full h-[60vh] overflow-hidden">
         {/* Background Image */}
@@ -59,16 +59,28 @@ export default function ContactFooter() {
       {/* Footer Section */}
       <section className="bg-gray-900 text-gray-200">
         <div className="max-w-6xl mx-auto px-6 py-10 flex flex-col md:flex-row md:justify-between gap-8">
+          
           {/* Left Column */}
           <div className="flex-1 flex flex-col gap-2">
-            <img src="/logo.png" alt="Faith School Logo" className="w-30 -ml-7 h-20 object-contain mb-2" />
-            <h3 className="font-bold text-lg">Faith Private Secondary School</h3>
-            <p className="text-sm md:text-base">P. O. Box 9, Chitipa, Malawi</p>
-            <p className="text-sm md:text-base">Mon - Fri: 07:00 - 16:00</p>
+            <img
+              src="/logo.png"
+              alt="Faith School Logo"
+              className="w-30 -ml-7 h-20 object-contain mb-2"
+            />
+            <h3 className="font-bold text-lg">
+              Faith Private Secondary School
+            </h3>
+            <p className="text-sm md:text-base">
+              P. O. Box 9, Chitipa, Malawi
+            </p>
+            <p className="text-sm md:text-base">
+              Mon - Fri: 07:00 - 16:00
+            </p>
           </div>
 
           {/* Right Column */}
           <div className="flex-1 flex flex-col gap-4">
+            
             {/* Social Icons */}
             <div className="flex gap-4">
               <a
@@ -77,12 +89,14 @@ export default function ContactFooter() {
               >
                 <FaFacebookF />
               </a>
+
               <a
                 href="https://wa.me/265999943476"
                 className="p-3 rounded-full bg-gray-200 text-black hover:bg-teal-600 hover:text-white transition"
               >
                 <FaWhatsapp />
               </a>
+
               <a
                 href="mailto:daviekanyimbo@gmail.com"
                 className="p-3 rounded-full bg-gray-200 text-black hover:bg-teal-600 hover:text-white transition"
@@ -90,20 +104,32 @@ export default function ContactFooter() {
                 <FaEnvelope />
               </a>
             </div>
-        
+
             {/* Quick Links */}
             <div className="grid grid-cols-2 gap-2 text-gray-300 text-sm md:text-base">
-              <a href="about" className="hover:text-teal-400 transition">About Us</a>
-              <a href="academics" className="hover:text-teal-400 transition">Academics</a>
-              <a href="admissions" className="hover:text-teal-400 transition">Admissions</a>
-              <a href="school-life" className="hover:text-teal-400 transition">School Life</a>
-              <a href="#" className="hover:text-teal-400 transition">News</a>
-              <a href="gallery" className="hover:text-teal-400 transition">Gallery</a>
+              <Link to="/About" className="hover:text-teal-400 transition">
+                About Us
+              </Link>
+              <Link to="/Academics" className="hover:text-teal-400 transition">
+                Academics
+              </Link>
+              <Link to="/Admissions" className="hover:text-teal-400 transition">
+                Admissions
+              </Link>
+              <Link to="/SchoolLife" className="hover:text-teal-400 transition">
+                School Life
+              </Link>
+              <Link to="/#" className="hover:text-teal-400 transition">
+                News
+              </Link>
+              <Link to="/Gallery" className="hover:text-teal-400 transition">
+                Gallery
+              </Link>
             </div>
           </div>
         </div>
 
-        {/* Go to Top & Copyright */}
+        {/* Bottom Bar */}
         <div className="border-t border-gray-700 mt-6 pt-4 pb-4 flex flex-col md:flex-row justify-between items-center max-w-6xl mx-auto px-6">
           <button
             onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
@@ -111,9 +137,20 @@ export default function ContactFooter() {
           >
             <FaArrowUp /> Back to Top
           </button>
+
           <span className="text-gray-400 text-sm mt-2 md:mt-0">
             © 2025 Faith Secondary School. All rights reserved.
           </span>
+          <div className="text-center text-xs text-gray-500 py-2">
+  Built by <a
+    href="https://ram-tech.netlify.app"
+    target="_blank"
+    className="hover:text-teal-400"
+  >
+    RamTech
+  </a>
+</div>
+
         </div>
       </section>
     </footer>

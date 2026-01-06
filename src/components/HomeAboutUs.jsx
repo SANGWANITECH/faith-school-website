@@ -132,7 +132,7 @@ export default function HomeAboutUs() {
             50% { transform: scale(1.2); }
           }
         `}
-      </style>o
+      </style>
     </section>
   );
 }
