@@ -151,24 +151,24 @@ export default function ExamResults() {
                         {item.description}
                       </p>
                       <div className="flex justify-center gap-4">
-                        <a
-                          href={item.file}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="flex items-center gap-2 bg-teal-600 text-white px-5 py-2 rounded-lg hover:bg-teal-700 transition text-sm md:text-base"
-                        >
-                          <FaEye className="text-lg" />
-                          View Online
-                        </a>
-                        <a
-                          href={item.file}
-                          download
-                          className="flex items-center gap-2 bg-gray-700 text-white px-5 py-2 rounded-lg hover:bg-gray-800 transition text-sm md:text-base"
-                        >
-                          <FaDownload className="text-lg" />
-                          Download
-                        </a>
-                      </div>
+  <a
+    href={item.file}
+    target="_blank"
+    rel="noopener noreferrer"
+    className="flex items-center gap-2 bg-teal-600 text-white px-5 py-2 rounded-lg hover:bg-teal-700 transition text-sm md:text-base"
+  >
+    <FaEye className="text-lg" />
+    View Online
+  </a>
+  <a
+    href={item.file}
+    download  // This forces download — keep it only for the Download button
+    className="flex items-center gap-2 bg-gray-700 text-white px-5 py-2 rounded-lg hover:bg-gray-800 transition text-sm md:text-base"
+  >
+    <FaDownload className="text-lg" />
+    Download
+  </a>
+</div>
                     </div>
                   );
                 })}
