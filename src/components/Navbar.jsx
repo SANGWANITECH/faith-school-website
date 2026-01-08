@@ -12,6 +12,7 @@ export default function Navbar() {
     { name: "Academics", path: "/academics" },
     { name: "Admissions", path: "/admissions" },
     { name: "School Life", path: "/school-life" },
+    { name: "Exam Results", path: "/results" },
   
     { name: "Gallery", path: "/gallery" },
   ];

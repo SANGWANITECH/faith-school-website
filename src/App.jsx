@@ -8,6 +8,7 @@ import Academics from "./pages/Academics";
 import Admissions from "./pages/Admissions";
 import SchoolLife from "./pages/SchoolLife";
 import Gallery from "./pages/Gallery";
+import Results from "./pages/Results";
 
 
 export default function App() {
@@ -22,6 +23,7 @@ export default function App() {
         <Route path="/admissions" element={<Admissions />} />
         <Route path="/school-life" element={<SchoolLife/>} />
         <Route path="/gallery" element={<Gallery/>} />
+        <Route path="/results" element={<Results/>} />
       </Routes>
       <Footer/>
     </Router>
